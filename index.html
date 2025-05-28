@@ -82,7 +82,7 @@ let lastid = 71;
 let img = 71;
 for (let i = 1; i < 72; i++) {
     document.querySelector(".con").insertAdjacentHTML("afterbegin", `
-    <div id="el${i}" style="border:2px solid rgba(255,255,255,1);background-image:url('img${img}.png');background-position:center;background-size:cover;color:#fff;height:clamp(15.625rem, 12.9223rem + 13.5135vw, 28.125rem);width:clamp(15.625rem, 12.9223rem + 13.5135vw, 28.125rem);border-radius:10px;z-index:${i};position:absolute;top:50%;left:50%;transform:translate(-50%, -50%) rotate(${r[i]});"></div>
+    <div id="el${i}" style="border:2px solid rgba(255,255,255,1);background-image:url('img${img}.PNG');background-position:center;background-size:cover;color:#fff;height:clamp(15.625rem, 12.9223rem + 13.5135vw, 28.125rem);width:clamp(15.625rem, 12.9223rem + 13.5135vw, 28.125rem);border-radius:10px;z-index:${i};position:absolute;top:50%;left:50%;transform:translate(-50%, -50%) rotate(${r[i]});"></div>
     `);
     img -= 1;
 }
