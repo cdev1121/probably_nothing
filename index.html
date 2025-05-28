@@ -67,7 +67,7 @@ h1 {
   <source src="test.mp3" type="audio/mpeg">
 </audio>
 <div class="con">
-    <h1>かむかもしかもにどもかも！</h1>
+    <h1 style="font-size: clamp(1.25rem, 1.1824rem + 0.3378vw, 1.5625rem);">かむかもしかもにどもかも！</h1>
     <div class="play">
         <svg xmlns="http://www.w3.org/2000/svg" width="clamp(4.0625rem, 3.8598rem + 1.0135vw, 5rem)" height="clamp(4.0625rem, 3.8598rem + 1.0135vw, 5rem)" viewBox="0 0 24 24" fill="none">
         <path fill-rule="evenodd" clip-rule="evenodd" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22ZM10.6935 15.8458L15.4137 13.059C16.1954 12.5974 16.1954 11.4026 15.4137 10.941L10.6935 8.15419C9.93371 7.70561 9 8.28947 9 9.21316V14.7868C9 15.7105 9.93371 16.2944 10.6935 15.8458Z" fill="#fff"/>
@@ -75,47 +75,7 @@ h1 {
     </div>
 </div>
 <script>
-let playing = false;
-document.querySelector(".play").addEventListener("click", function () {
-  if (!playing) {
-    document.querySelector("audio").play();
-    start();
-    this.style.opacity = '0';
-    playing = true;
-  }
-});
-let r = [];
-for (let i = 0x0; i < 0x47; i++) {
-  r.push(Math.round(Math.random() * 0xa) + "deg");
-}
-let lastid = 0x47;
-let img = 0x47;
-for (let i = 0x1; i < 0x48; i++) {
-  document.querySelector(".con").insertAdjacentHTML('afterbegin', "\n    <div id=\"el" + i + "\" style=\"border:2px solid rgba(255,255,255,1);background-image:url('img" + img + ".PNG');background-position:center;background-size:cover;color:#fff;height:clamp(15.625rem, 12.9223rem + 13.5135vw, 28.125rem);width:clamp(15.625rem, 12.9223rem + 13.5135vw, 28.125rem);border-radius:10px;z-index:" + i + ";position:absolute;top:50%;left:50%;transform:translate(-50%, -50%) rotate(" + r[i] + ");\"></div>\n    ");
-  img -= 0x1;
-}
-document.querySelector("#el" + lastid).classList.add('t2');
-document.querySelector("#el" + lastid).style.transform = "translate(-50%, -50%) rotate(0deg)";
-function transformDiv() {
-  if (lastid > 0x0) {
-    setTimeout(() => {
-      try {
-        document.querySelector("#el" + (lastid - 0x1)).classList.add('t2');
-        document.querySelector("#el" + (lastid - 0x1)).style.transform = "translate(-50%, -50%) rotate(0deg)";
-      } catch (_0x26d0a6) {}
-      document.querySelector("#el" + lastid).classList.add('t');
-      setTimeout(() => {
-        document.querySelector("#el" + lastid).remove();
-        lastid -= 0x1;
-        transformDiv();
-      }, 0x3e8);
-    }, 0x3e8);
-  }
-}
-
-function start() {
-  transformDiv();
-}
+const _0x4ef2c1=_0x2eff;function _0x3001(){const _0x580e46=['add','style','remove','afterbegin','deg','.con','28zqtsvF','1043310eAsBFQ','147631CPuVOQ','2124903WlYpqW','20lXqkhZ','\x22\x20style=\x22border:2px\x20solid\x20rgba(255,255,255,1);background-image:url(\x27img','#el','137688mtLmrO','transform','2MEdHof','\x0a\x20\x20\x20\x20<div\x20id=\x22el','classList','click','push',');\x22></div>\x0a\x20\x20\x20\x20','88083ZTMWbg','.PNG\x27);background-position:center;background-size:cover;color:#fff;height:clamp(15.625rem,\x2012.9223rem\x20+\x2013.5135vw,\x2028.125rem);width:clamp(15.625rem,\x2012.9223rem\x20+\x2013.5135vw,\x2028.125rem);border-radius:10px;z-index:','584zKWgJw','opacity','12oYJWSM','402448eqMiMe','querySelector','.play','2782VbVlVz','4188ynIhim','addEventListener','random',';position:absolute;top:50%;left:50%;transform:translate(-50%,\x20-50%)\x20rotate(','translate(-50%,\x20-50%)\x20rotate(0deg)'];_0x3001=function(){return _0x580e46;};return _0x3001();}(function(_0x19b25a,_0x1650b6){const _0xc5735f=_0x2eff,_0x155074=_0x19b25a();while(!![]){try{const _0x194bcd=-parseInt(_0xc5735f(0x11f))/0x1*(parseInt(_0xc5735f(0x12a))/0x2)+-parseInt(_0xc5735f(0x119))/0x3+parseInt(_0xc5735f(0x129))/0x4*(parseInt(_0xc5735f(0x117))/0x5)+-parseInt(_0xc5735f(0x11d))/0x6*(-parseInt(_0xc5735f(0x116))/0x7)+parseInt(_0xc5735f(0x127))/0x8*(parseInt(_0xc5735f(0x125))/0x9)+parseInt(_0xc5735f(0x11a))/0xa*(-parseInt(_0xc5735f(0x118))/0xb)+-parseInt(_0xc5735f(0x12e))/0xc*(-parseInt(_0xc5735f(0x12d))/0xd);if(_0x194bcd===_0x1650b6)break;else _0x155074['push'](_0x155074['shift']());}catch(_0x50bc41){_0x155074['push'](_0x155074['shift']());}}}(_0x3001,0x5a2ac));let playing=![];document[_0x4ef2c1(0x12b)](_0x4ef2c1(0x12c))[_0x4ef2c1(0x12f)](_0x4ef2c1(0x122),function(){const _0x1b49e0=_0x4ef2c1;!playing&&(document[_0x1b49e0(0x12b)]('audio')['play'](),start(),this[_0x1b49e0(0x134)][_0x1b49e0(0x128)]='0',playing=!![]);});let r=[];for(let i=0x0;i<0x47;i++){r[_0x4ef2c1(0x123)](Math['round'](Math[_0x4ef2c1(0x130)]()*0xa)+_0x4ef2c1(0x137));}function _0x2eff(_0x40ac04,_0x35eb92){const _0x300120=_0x3001();return _0x2eff=function(_0x2efff3,_0x12db19){_0x2efff3=_0x2efff3-0x115;let _0x1d7a6d=_0x300120[_0x2efff3];return _0x1d7a6d;},_0x2eff(_0x40ac04,_0x35eb92);}let lastid=0x47,img=0x47;for(let i=0x1;i<0x48;i++){document['querySelector'](_0x4ef2c1(0x115))['insertAdjacentHTML'](_0x4ef2c1(0x136),_0x4ef2c1(0x120)+i+_0x4ef2c1(0x11b)+img+_0x4ef2c1(0x126)+i+_0x4ef2c1(0x131)+r[i]+_0x4ef2c1(0x124)),img-=0x1;}document['querySelector'](_0x4ef2c1(0x11c)+lastid)[_0x4ef2c1(0x121)][_0x4ef2c1(0x133)]('t2'),document[_0x4ef2c1(0x12b)](_0x4ef2c1(0x11c)+lastid)['style'][_0x4ef2c1(0x11e)]=_0x4ef2c1(0x132);function transformDiv(){lastid>0x0&&setTimeout(()=>{const _0x18dec8=_0x2eff;try{document[_0x18dec8(0x12b)](_0x18dec8(0x11c)+(lastid-0x1))['classList']['add']('t2'),document['querySelector']('#el'+(lastid-0x1))[_0x18dec8(0x134)][_0x18dec8(0x11e)]=_0x18dec8(0x132);}catch(_0x3cd5b6){}document[_0x18dec8(0x12b)]('#el'+lastid)['classList']['add']('t'),setTimeout(()=>{const _0xd763c2=_0x18dec8;document['querySelector'](_0xd763c2(0x11c)+lastid)[_0xd763c2(0x135)](),lastid-=0x1,transformDiv();},0x3e8);},0x3e8);}function start(){transformDiv();}
 </script>
 </body>
 </html>
